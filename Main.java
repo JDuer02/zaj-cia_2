@@ -1,7 +1,15 @@
+import java.util.Scanner;
+
 class Main {
   public static void main(String[] args) {
-    for(int i=1; i<100; i=i+2)
-      System.out.println(i);
-    
+    System.out.println("Wprowadź liczbę a: ");
+    Scanner scanner = new Scanner(System.in);
+    double a = scanner.nextDouble();
+    System.out.println("Wprowadź liczbę b: ");
+    double b = scanner.nextDouble();
+    double skladnik1 = Math.pow(a, b);
+    double skladnik2 = Math.pow(b, a);
+    double suma = skladnik1 + skladnik2;
+    System.out.println(suma);
   }
 }
